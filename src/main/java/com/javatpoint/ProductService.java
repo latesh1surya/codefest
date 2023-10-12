@@ -2,6 +2,8 @@ package com.javatpoint;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
+
+import com.javatpoint.model.AppointmentDetails;
 @Service
 public class ProductService implements IProductService  
 {
@@ -18,6 +20,13 @@ products.add(new Product(103, "Laptop", "LHP29OCP", 24000.00, 1));
 products.add(new Product(104, "Air Conditioner", "ACLG66721", 30000.00, 5));
 products.add(new Product(105, "Refrigerator ", "12WP9087", 10000.00, 4));
 //returns a list of product
+
+
+List<AppointmentDetails> appointmentDetailsList = new ArrayList<>();
+
+// AppointmentDetails appointmentDetails1 = new AppointmentDetails("1", "jay", "viru", "02:03:23  ", null, null)
+
+
 return products;
 }
 }
